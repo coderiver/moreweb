@@ -1,1 +1,64 @@
 // Normally mainpage styles
+//logo
+.logo
+	+hide-text
+	+s(logo)				
+
+//nav
+.nav
+	font-size: 0
+
+	li	
+		display: inline-block
+		margin-right: 18px
+		&:last-child
+			margin-right: 0
+
+		a 
+			display: block
+			color: #232323
+			+extralight
+			+fs(14)
+			font-weight: 200
+			line-height: 24px
+			+font-smoothing
+			text-transform: uppercase
+			&:hover
+				text-decoration: underline				
+
+
+//title 
+.title
+	min-height: 60px
+	border: 2px solid white	
+	text-align: center
+	color: $white
+	padding: 10px 20px
+	margin: auto
+
+
+	h2 
+		+reg
+		+fs(30)
+		line-height: 1.2
+		text-transform: uppercase
+
+.btn-tell
+	height: 29px
+	line-height: 29px
+	text-align: center
+	padding: 0 14px
+	background-color: $yellow
+	&:hover
+		background-color: darken($yellow, 10%)
+
+	&:active 
+		background-color: darken($yellow, 10%)
+		box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.39)
+
+	span 
+		color: #232323
+		+bold
+		+fs(16)
+		font-weight: 700
+		line-height: 24px		

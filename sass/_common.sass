@@ -47,12 +47,239 @@
 // p
 // 	+jpg(bla)
 
+html 
+	font-size: 62.5%
 
 body
 	font-family: Arial, sans-serif
-	font-size: 12px
+	+fs(12)
 	line-height: 1.4
+	color: #000
+
+.out
+	max-width: 1920px
+	min-width: 960px
+	margin: auto
+	overflow: hidden
+
+//reset
+a
+	text-decoration: none
+	+tr(all 0.3s)
+
+h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td
+	font-weight: normal
+	font-style: normal	
+
+//fonts
++font("Bliss Pro", BlissPro)
++font("Bliss Pro Bold", BlissPro-Bold)
++font("Bliss Pro ExtraBold", BlissPro-ExtraBold)
++font("Bliss Pro ExtraLight", BlissPro-ExtraLight)
++font("Bliss Pro Heavy", BlissPro-Heavy)
+
+=reg
+	font-family: "Bliss Pro", Arial, sans-serif
+
+=bold
+	font-family: "Bliss Pro Bold", Arial, sans-serif
+
+=extrabold
+	font-family: "Bliss Pro ExtraBold", Arial, sans-serif	
+
+=extralight
+	font-family: "Bliss Pro ExtraLight", Arial, sans-serif		
+
+=heavy
+	font-family: "Bliss Pro Heavy", Arial, sans-serif	
+
+//vars
+$yellow: #f7e357
+$blue: #00bfff
+$white: #fff
+$black: #000
+$col: #ffd640
+
+//icons
+.ico
+	display: inline-block
+	&.ico-contact
+		+svg(ico-contact, 88, 92)
+	&.ico-kpi
+		+svg(ico-kpi, 88, 92)
+	&.ico-strategy
+		+svg(ico-strategy, 88, 92)
+	&.ico-plan
+		+svg(ico-plan, 88, 92)
+	&.ico-efect
+		+svg(ico-efect, 88, 92)
+	&.ico-profit
+		+svg(ico-profit, 88, 92)					
+
+
+//extend
+.in 
+	width: 960px
+	margin: auto
+	padding: 0 20px
+	position: relative
+
+%in
+	@extend .in	
+
+
+//buttons
+.btn 
+	height: 29px
+	line-height: 29px
+	text-align: center
+	padding: 0 16px
+	&.is-yellow
+		background-color: $yellow
+		&:hover
+			background-color: darken($yellow, 10%)
+	&.is-blue
+		background-color: $blue
+		&:hover
+			background-color: #00a2ff
+		&:active
+			background-color: darken($blue, 10%)
+			// цвет для активной синей кнопки 007eff
+			box-shadow: inset 1px 1.7px 3px rgba(0, 0, 0, 0.33)
+
+	&.btn_med		
+		height: 52px
+		line-height: 52px
+
+	&.btn_lg
+		height: 77px
+		line-height: 77px	
 
 
 
 // common blocks
+
+//header
+.header 
+	background-color: $white
+	min-height: 95px
+
+	&__in 
+		@extend .in
+		+clr
+
+	.logo 
+		float: left	
+		margin-top: 29px
+
+	.nav
+		overflow: hidden
+		margin: 0 206px 0 268px
+		padding-top: 35px
+
+	.btn-tell
+		float: right
+		margin-top: 32px
+
+
+
+//lpromotion
+.lpromotion
+	+png(line1)
+	+cover	
+	width: 100%
+	height: auto
+	min-height: 126px
+
+	&__in 
+		@extend .in
+		padding: 33px 0		
+
+	.title
+		width: 100%	
+
+
+//lwork
+.lwork
+	+png(line2)
+	+cover	
+	width: 100%
+	height: auto
+	min-height: 126px
+
+	&__in 
+		@extend .in
+		padding: 33px 0	
+
+	.title
+		width: 397px	
+
+//steps
+.steps
+	height: 888px
+	background-color: $white
+
+	&__in 
+		@extend .in 
+		padding: 95px 0
+
+	&__container
+		height: 698px
+		background-color: $yellow
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			z-index: 10
+			top: -71px
+			left: 0
+			right: 0
+			margin: auto
+			+png(people-top)
+		&:after
+			content: ''
+			position: absolute
+			display: block
+			z-index: 10
+			bottom: -63px
+			left: 0
+			right: 0
+			margin: auto
+			+png(people-bot)
+
+	&__wrap
+		width: 778px
+		margin: auto
+		height: 600px
+		outline: 1px solid black
+
+	&__inner__wrap
+		margin: 0 -1%		
+
+
+	&__title
+		line-height: 1.2
+		text-align: center
+		+fs(30)
+		+extrabold
+		padding: 100px 0 33px				
+	
+	&__col
+		display: inline-block
+		vertical-align: top
+		width: 31%
+		margin: 0 1% 50px
+		text-align: center
+
+	&__top
+		text-align: center	
+		+fs(14)
+		line-height: 1.2
+		+extralight
+		font-weight: 200
+	
+	&__content
+		ul 
+			display: none
+			text-align: left		

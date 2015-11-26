@@ -25,9 +25,84 @@ html { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: 
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+html { font-size: 62.5%; }
+
+body { font-family: Arial, sans-serif; font-size: 12px; font-size: 1.2rem; line-height: 1.4; color: #000; }
+
+.out { max-width: 1920px; min-width: 960px; margin: auto; overflow: hidden; }
+
+a { text-decoration: none; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+
+h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "Bliss Pro"; src: url("fonts/BlissPro.eot"); src: url("fonts/BlissPro.eot?#iefix") format("embedded-opentype"), url("fonts/BlissPro.woff2") format("woff2"), url("fonts/BlissPro.woff") format("woff"), url("fonts/BlissPro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Bliss Pro Bold"; src: url("fonts/BlissPro-Bold.eot"); src: url("fonts/BlissPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/BlissPro-Bold.woff2") format("woff2"), url("fonts/BlissPro-Bold.woff") format("woff"), url("fonts/BlissPro-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Bliss Pro ExtraBold"; src: url("fonts/BlissPro-ExtraBold.eot"); src: url("fonts/BlissPro-ExtraBold.eot?#iefix") format("embedded-opentype"), url("fonts/BlissPro-ExtraBold.woff2") format("woff2"), url("fonts/BlissPro-ExtraBold.woff") format("woff"), url("fonts/BlissPro-ExtraBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Bliss Pro ExtraLight"; src: url("fonts/BlissPro-ExtraLight.eot"); src: url("fonts/BlissPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("fonts/BlissPro-ExtraLight.woff2") format("woff2"), url("fonts/BlissPro-ExtraLight.woff") format("woff"), url("fonts/BlissPro-ExtraLight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Bliss Pro Heavy"; src: url("fonts/BlissPro-Heavy.eot"); src: url("fonts/BlissPro-Heavy.eot?#iefix") format("embedded-opentype"), url("fonts/BlissPro-Heavy.woff2") format("woff2"), url("fonts/BlissPro-Heavy.woff") format("woff"), url("fonts/BlissPro-Heavy.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+.ico { display: inline-block; }
+.ico.ico-contact { background: url("../img/svg/ico-contact.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.ico.ico-kpi { background: url("../img/svg/ico-kpi.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.ico.ico-strategy { background: url("../img/svg/ico-strategy.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.ico.ico-plan { background: url("../img/svg/ico-plan.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.ico.ico-efect { background: url("../img/svg/ico-efect.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.ico.ico-profit { background: url("../img/svg/ico-profit.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+
+.in, .header__in, .lpromotion__in, .lwork__in, .steps__in { width: 960px; margin: auto; padding: 0 20px; position: relative; }
+
+.btn { height: 29px; line-height: 29px; text-align: center; padding: 0 16px; }
+.btn.is-yellow { background-color: #f7e357; }
+.btn.is-yellow:hover { background-color: #f5db26; }
+.btn.is-blue { background-color: #00bfff; }
+.btn.is-blue:hover { background-color: #00a2ff; }
+.btn.is-blue:active { background-color: #0099cc; box-shadow: inset 1px 1.7px 3px rgba(0, 0, 0, 0.33); }
+.btn.btn_med { height: 52px; line-height: 52px; }
+.btn.btn_lg { height: 77px; line-height: 77px; }
+
+.header { background-color: #fff; min-height: 95px; }
+.header__in { *zoom: 1; }
+.header__in:after { content: " "; display: table; clear: both; }
+.header .logo { float: left; margin-top: 29px; }
+.header .nav { overflow: hidden; margin: 0 206px 0 268px; padding-top: 35px; }
+.header .btn-tell { float: right; margin-top: 32px; }
+
+.lpromotion { background: url("../img/line1.png") no-repeat 0 0; width: 1920px; height: 126px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
+.lpromotion__in { padding: 33px 0; }
+.lpromotion .title { width: 100%; }
+
+.lwork { background: url("../img/line2.png") no-repeat 0 0; width: 1920px; height: 126px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
+.lwork__in { padding: 33px 0; }
+.lwork .title { width: 397px; }
+
+.steps { height: 888px; background-color: #fff; }
+.steps__in { padding: 95px 0; }
+.steps__container { height: 698px; background-color: #f7e357; position: relative; }
+.steps__container:before { content: ""; position: absolute; display: block; z-index: 10; top: -71px; left: 0; right: 0; margin: auto; background: url("../img/people-top.png") no-repeat 0 0; width: 886px; height: 148px; }
+.steps__container:after { content: ""; position: absolute; display: block; z-index: 10; bottom: -63px; left: 0; right: 0; margin: auto; background: url("../img/people-bot.png") no-repeat 0 0; width: 935px; height: 151px; }
+.steps__wrap { width: 778px; margin: auto; height: 600px; outline: 1px solid black; }
+.steps__inner__wrap { margin: 0 -1%; }
+.steps__title { line-height: 1.2; text-align: center; font-size: 30px; font-size: 3rem; font-family: "Bliss Pro ExtraBold", Arial, sans-serif; padding: 100px 0 33px; }
+.steps__col { display: inline-block; vertical-align: top; width: 31%; margin: 0 1% 50px; text-align: center; }
+.steps__top { text-align: center; font-size: 14px; font-size: 1.4rem; line-height: 1.2; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; font-weight: 200; }
+.steps__content ul { display: none; text-align: left; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.logo { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-se5c046c737.png') 0 -125px no-repeat; width: 212px; height: 37px; }
+
+.nav { font-size: 0; }
+.nav li { display: inline-block; margin-right: 18px; }
+.nav li:last-child { margin-right: 0; }
+.nav li a { display: block; color: #232323; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; font-size: 14px; font-size: 1.4rem; font-weight: 200; line-height: 24px; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; text-transform: uppercase; }
+.nav li a:hover { text-decoration: underline; }
+
+.title { min-height: 60px; border: 2px solid white; text-align: center; color: #fff; padding: 10px 20px; margin: auto; }
+.title h2 { font-family: "Bliss Pro", Arial, sans-serif; font-size: 30px; font-size: 3rem; line-height: 1.2; text-transform: uppercase; }
+
+.btn-tell { height: 29px; line-height: 29px; text-align: center; padding: 0 14px; background-color: #f7e357; }
+.btn-tell:hover { background-color: #f5db26; }
+.btn-tell:active { background-color: #f5db26; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.39); }
+.btn-tell span { color: #232323; font-family: "Bliss Pro Bold", Arial, sans-serif; font-size: 16px; font-size: 1.6rem; font-weight: 700; line-height: 24px; }
