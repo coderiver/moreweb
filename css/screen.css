@@ -81,38 +81,25 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .steps__container:after { content: ""; position: absolute; display: block; z-index: 10; bottom: -63px; left: 0; right: 0; margin: auto; background: url("../img/people-bot.png") no-repeat 0 0; width: 935px; height: 151px; }
 .steps__wrap { width: 778px; margin: auto; }
 .steps__wrap__in { margin: 0 -1%; }
-.steps__row.is-mod { margin-top: -79px; }
 .steps__title { line-height: 1.2; text-align: center; font-size: 30px; font-size: 3rem; font-family: "Bliss Pro ExtraBold", Arial, sans-serif; padding: 100px 0 33px; }
 
-.step { display: inline-block; vertical-align: top; width: 31%; margin: 0 1%; text-align: center; }
+.step { display: inline-block; vertical-align: top; width: 31%; margin: 0 1% 90px; text-align: center; }
 .step:hover .step__content { background-color: #00bfff; }
 .step:hover .step__content ul { display: block; }
-.step:hover .step__content li { color: #fff; }
+.step:hover .step__content li, .step:hover .step__content p { color: #fff; }
 .step:hover .step__top { color: #fff; }
+.step.step1:hover .ico-contact { background: url("../img/svg/ico-contact-h.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.step.step2:hover .ico-kpi { background: url("../img/svg/ico-kpi-h.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.step.step3:hover .ico-strategy { background: url("../img/svg/ico-strategy-h.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.step.step4:hover .ico-plan { background: url("../img/svg/ico-plan-h.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.step.step5:hover .ico-efect { background: url("../img/svg/ico-efect-h.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.step.step6:hover .ico-profit { background: url("../img/svg/ico-profit-h.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
 .step__img { margin-bottom: 7px; }
-.step__top { text-align: center; font-size: 14px; font-size: 1.4rem; line-height: 1.2; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; font-weight: 200; color: #232323; }
+.step__top { text-align: center; font-size: 14px; font-size: 1.4rem; line-height: 1.2; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; font-weight: 200; color: #232323; padding: 13px 25px 16px; }
 .step__content { background-color: transparent; margin: auto; position: relative; z-index: 100; }
-.step__content ul { text-align: left; }
-.step__content li { line-height: 18px; font-size: 12px; font-size: 1.2rem; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; color: #232323; position: relative; }
+.step__content ul { display: none; text-align: left; background-color: #00bfff; padding: 0 30px 30px; position: absolute; left: 0; right: 0; }
+.step__content li, .step__content p { line-height: 18px; font-size: 12px; font-size: 1.2rem; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; color: #232323; position: relative; }
 .step__content li:before { content: "-"; font-size: 12px; font-size: 1.2rem; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; position: absolute; top: 0; bottom: 0; left: -7px; margin: auto; }
-.step.step1 .step__content { width: 198px; min-height: 163px; }
-.step.step1 .step__top { padding: 13px 27px 16px 25px; }
-.step.step1 ul { padding: 0 20px 20px 36px; }
-.step.step2 .step__content { width: 217px; min-height: 213px; }
-.step.step2 .step__top { padding: 13px 29px 16px 24px; }
-.step.step2 ul { padding: 0 36px 20px 33px; }
-.step.step3 .step__content { width: 238px; min-height: 213px; }
-.step.step3 .step__top { padding: 13px 29px 16px 24px; }
-.step.step3 ul { padding: 0 14px 20px 41px; }
-.step.step4 .step__content { width: 251px; min-height: 199px; }
-.step.step4 .step__top { padding: 20px 51px 13px 50px; }
-.step.step4 ul { padding: 0 19px 15px 25px; }
-.step.step5 .step__content { width: 227px; min-height: 178px; }
-.step.step5 .step__top { padding: 20px 15px 15px 34px; }
-.step.step5 ul { padding: 0 17px 15px 30px; }
-.step.step6 .step__content { width: 200px; min-height: 128px; }
-.step.step6 .step__top { padding: 20px 15px 10px 34px; }
-.step.step6 ul { padding: 0 23px 15px 34px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
