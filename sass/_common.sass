@@ -251,26 +251,44 @@ $col: #ffd640
 	&__wrap
 		width: 778px
 		margin: auto
-		height: 600px
-		outline: 1px solid black
 
-	&__inner__wrap
-		margin: 0 -1%		
+	&__wrap__in
+		margin: 0 -1%	
 
+	&__row
+		&.is-mod
+			margin-top: -79px		
 
 	&__title
 		line-height: 1.2
 		text-align: center
 		+fs(30)
 		+extrabold
-		padding: 100px 0 33px				
-	
-	&__col
-		display: inline-block
-		vertical-align: top
-		width: 31%
-		margin: 0 1% 50px
-		text-align: center
+		padding: 100px 0 33px
+
+//step	
+.step
+	display: inline-block
+	vertical-align: top
+	width: 31%
+	margin: 0 1%
+	text-align: center
+	&:hover
+		.step__content
+			background-color: $blue
+			ul 
+				display: block
+			li 
+				color: $white	
+
+		.step__top 
+			color: $white	
+			
+			
+
+
+	&__img
+		margin-bottom: 7px	
 
 	&__top
 		text-align: center	
@@ -278,8 +296,86 @@ $col: #ffd640
 		line-height: 1.2
 		+extralight
 		font-weight: 200
-	
+		color: #232323
+						
 	&__content
+		background-color: transparent
+		margin: auto
+		position: relative
+		z-index: 100
+		
+
 		ul 
-			display: none
-			text-align: left		
+			// display: none
+			text-align: left
+
+		li
+			line-height: 18px
+			+fs(12)
+			+extralight
+			color: #232323
+			position: relative
+			&:before
+				content: "-"
+				+fs(12)
+				+extralight
+				position: absolute
+				top: 0
+				bottom: 0
+				left: -7px
+				margin: auto
+
+	&.step1 
+		.step__content
+			width: 198px
+			min-height: 163px
+		.step__top
+			padding: 13px 27px 16px 25px
+		ul 
+			padding: 0 20px 20px 36px 	
+
+	&.step2 
+		.step__content
+			width: 217px
+			min-height: 213px	
+		.step__top
+			padding: 13px 29px 16px 24px
+		ul 
+			padding: 0 36px 20px 33px	
+				
+	&.step3 
+		.step__content
+			width: 238px
+			min-height: 213px	
+		.step__top
+			padding: 13px 29px 16px 24px
+		ul 
+			padding: 0 14px 20px 41px	
+							
+	&.step4 
+		.step__content
+			width: 251px
+			min-height: 199px
+		.step__top 
+			padding: 20px 51px 13px 50px	
+		ul 
+			padding: 0 19px 15px 25px	
+
+
+	&.step5 
+		.step__content
+			width: 227px
+			min-height: 178px
+		.step__top 
+			padding: 20px 15px 15px 34px
+		ul 
+			padding: 0 17px 15px 30px	
+
+	&.step6 
+		.step__content
+			width: 200px
+			min-height: 128px	
+		.step__top 
+			padding: 20px 15px 10px 34px
+		ul 
+			padding: 0 23px 15px 34px	
