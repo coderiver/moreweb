@@ -95,11 +95,11 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td
 
 //vars
 $yellow: #f7e357
+$yellow-hot: #ffd626
 $blue: #00bfff
 $white: #fff
-$black: #000
+$black: #232323
 $col: #ffd640
-
 
 //icons
 .ico
@@ -115,7 +115,15 @@ $col: #ffd640
 	&.ico-efect
 		+svg(ico-efect, 88, 92)
 	&.ico-profit
-		+svg(ico-profit, 88, 92)					
+		+svg(ico-profit, 88, 92)	
+	&.ico-rise-search
+		+svg(ico-rise-search, 94, 93)	
+	&.ico-rise-au
+		+svg(ico-rise-au, 94, 93)
+	&.ico-rise-tr
+		+svg(ico-rise-tr, 94, 93)	
+	&.ico-magnit
+		+s(ico-magnit)						
 
 
 //extend
@@ -164,6 +172,11 @@ $col: #ffd640
 .header 
 	background-color: $white
 	min-height: 95px
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 999999
 
 	&__in 
 		@extend .in
@@ -182,38 +195,55 @@ $col: #ffd640
 		float: right
 		margin-top: 32px
 
-
-
-//lpromotion
-.lpromotion
+//l-promotion
+.l-promotion
 	+png(line1)
-	+cover	
-	width: 100%
-	height: auto
-	min-height: 126px
-
-	&__in 
-		@extend .in
-		padding: 33px 0		
 
 	.title
 		width: 100%	
 
 
-//lwork
-.lwork
+//l-work
+.l-work
 	+png(line2)
-	+cover	
-	width: 100%
-	height: auto
-	min-height: 126px
-
-	&__in 
-		@extend .in
-		padding: 33px 0	
 
 	.title
 		width: 397px	
+
+//l-privilege
+.l-privilege
+	+png(line3)
+	
+	.title
+		width: 782px	
+
+		span 
+			+heavy
+			color: $blue
+			position: relative
+			z-index: 10
+			display: inline-block
+			vertical-align: top
+			margin: 0 7px
+			&:before
+				content: ''
+				display: block
+				border-radius: 50%
+				z-index: -1
+				width: 32px
+				height: 32px
+				background-color: $white
+				+vcenter
+
+.l-promotion, .l-work, .l-privilege
+	+cover	
+	width: 100%
+	height: auto
+	min-height: 126px	
+
+.l-work__in, .l-promotion__in, .l-privilege__in
+	@extend .in
+	padding: 33px 20px			
 
 //steps
 .steps
@@ -393,3 +423,192 @@ $col: #ffd640
 	// 		padding: 20px 15px 10px 34px
 	// 	ul 
 	// 		padding: 0 23px 28px 34px	
+
+	
+//privilege
+.privilege
+	background-color: $white
+
+	&__in 
+		@extend .in
+		padding: 192px 0 68px
+
+	.magnit 
+		margin: 35px auto 40px	
+
+	.priv
+		height: 136px
+		background-color: #facc26
+		margin-bottom: 30px	
+		position: relative	
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			right: 100%
+			top: 0
+			height: 114px
+			width: 100px
+			background-color: #facc26
+			transform-origin: 100% 0
+			+rotate(-33)
+		&:hover
+			background-color: $blue	
+			&:before
+				background-color: $blue	
+
+			.priv__tringle, .numb
+				background-color: $blue 
+
+			.priv__tringle:before
+				border-top-color: #00a3ed
+
+			.numb:before
+				border-bottom-color: $blue	
+
+			.priv__tail
+				background-color: $blue	
+
+			h4, p, .numb
+				color: $white
+			
+		.ico 
+			position: absolute
+			left: 15px
+			top: 50%
+			-ms-transform: translate(0, -50%)	
+			transform: translate(0, -50%)		
+
+		&__text
+			padding: 24px 40px 25px 140px
+			overflow: auto
+			height: 100%	
+
+			h4 
+				margin-bottom: 11px	
+				color: #232323
+				+fs(20)
+				+extrabold
+				font-weight: 700
+				line-height: 20px
+				text-transform: uppercase
+
+			p 
+				color: #232323
+				+extralight
+				+fs(14)
+				font-weight: 200
+				line-height: 18px
+		
+		&__tringle
+			position: absolute
+			left: 100%
+			bottom: 0
+			background-color: $yellow-hot
+			width: 136px
+			height: 136px
+			&:after
+				content: ''
+				display: block
+				border-bottom: 136px solid white
+				border-left: 136px solid transparent
+				position: absolute
+				bottom: 0
+				right: 0
+				background-color: transparent
+			&:before
+				content: ''
+				display: block
+				border-top: 136px solid #f5ba0a
+				border-left: 20px solid transparent
+				position: absolute
+				right: 100%
+				top: 0
+
+			.numb 
+				position: absolute
+				bottom: 100%
+				left: 0
+				background-color: $yellow-hot
+				width: 100%
+				height: 62px
+				color: $black
+				&:before
+					content: ''
+					display: block
+					position: absolute
+					bottom: 100%
+					border-bottom: 106px solid $yellow-hot
+					border-left: 106px solid transparent
+					border-right: 106px solid transparent
+					left: 50%
+					-ms-transform: translate(-50%, 0)
+					transform: translate(-50%, 0)
+
+				span
+					+vcenter
+					+heavy
+					+fs(68)
+					line-height: 1
+					z-index: 100
+		
+		&__tail
+			content: ''
+			display: block	
+			height: 114px
+			width: 500%
+			right: 100%
+			bottom: 0
+			position: absolute
+			background-color: #facc26
+			transform-origin: 100% 100%
+			-ms-transform-origin: 100% 100%
+			+rotate(-33)		
+
+
+		&.is-one
+			width: 458px
+			&:hover .ico-rise-search
+				+svg(ico-rise-search-h, 94, 93)
+			h4
+				width: 255px
+			p	
+				width: 276px	
+
+		&.is-two
+			width: 606px
+			&:hover .ico-rise-tr
+				+svg(ico-rise-tr-h, 94, 93)
+			h4
+				width: 255px
+			p	
+				width: 309px	
+
+		&.is-three
+			width: 765px
+			&:hover .ico-rise-au
+				+svg(ico-rise-au-h, 94, 93)
+			h4
+				width: 518px
+			p	
+				width: 518px	
+
+	&__res
+		color: $black
+		+fs(76)
+		+extralight
+		text-align: center
+		line-height: 1.2
+		padding-top: 10px
+		span 
+			display: block
+			line-height: 1
+			+extrabold
+			+fs(55)
+
+	.btn-profit
+		margin: auto
+		width: 300px
+		display: block
+		border: none		
+

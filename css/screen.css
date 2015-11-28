@@ -47,8 +47,12 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .ico.ico-plan { background: url("../img/svg/ico-plan.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
 .ico.ico-efect { background: url("../img/svg/ico-efect.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
 .ico.ico-profit { background: url("../img/svg/ico-profit.svg") no-repeat 0 0; -moz-background-size: 88px 92px; -o-background-size: 88px 92px; -webkit-background-size: 88px 92px; background-size: 88px 92px; width: 88px; height: 92px; display: inline-block; }
+.ico.ico-rise-search { background: url("../img/svg/ico-rise-search.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
+.ico.ico-rise-au { background: url("../img/svg/ico-rise-au.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
+.ico.ico-rise-tr { background: url("../img/svg/ico-rise-tr.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
+.ico.ico-magnit { background: url('../img/icons-sfee331a205.png') 0 0 no-repeat; width: 81px; height: 165px; }
 
-.in, .header__in, .lpromotion__in, .lwork__in, .steps__in { width: 960px; margin: auto; padding: 0 20px; position: relative; }
+.in, .header__in, .l-work__in, .l-promotion__in, .l-privilege__in, .steps__in, .privilege__in { width: 960px; margin: auto; padding: 0 20px; position: relative; }
 
 .btn { height: 29px; line-height: 29px; text-align: center; padding: 0 16px; }
 .btn.is-yellow { background-color: #f7e357; }
@@ -59,20 +63,27 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .btn.btn_med { height: 52px; line-height: 52px; }
 .btn.btn_lg { height: 77px; line-height: 77px; }
 
-.header { background-color: #fff; min-height: 95px; }
+.header { background-color: #fff; min-height: 95px; position: fixed; top: 0; left: 0; right: 0; z-index: 999999; }
 .header__in { *zoom: 1; }
 .header__in:after { content: " "; display: table; clear: both; }
 .header .logo { float: left; margin-top: 29px; }
 .header .nav { overflow: hidden; margin: 0 206px 0 268px; padding-top: 35px; }
 .header .btn-tell { float: right; margin-top: 32px; }
 
-.lpromotion { background: url("../img/line1.png") no-repeat 0 0; width: 1920px; height: 126px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
-.lpromotion__in { padding: 33px 0; }
-.lpromotion .title { width: 100%; }
+.l-promotion { background: url("../img/line1.png") no-repeat 0 0; width: 1920px; height: 126px; }
+.l-promotion .title { width: 100%; }
 
-.lwork { background: url("../img/line2.png") no-repeat 0 0; width: 1920px; height: 126px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
-.lwork__in { padding: 33px 0; }
-.lwork .title { width: 397px; }
+.l-work { background: url("../img/line2.png") no-repeat 0 0; width: 1920px; height: 126px; }
+.l-work .title { width: 397px; }
+
+.l-privilege { background: url("../img/line3.png") no-repeat 0 0; width: 1920px; height: 126px; }
+.l-privilege .title { width: 782px; }
+.l-privilege .title span { font-family: "Bliss Pro Heavy", Arial, sans-serif; color: #00bfff; position: relative; z-index: 10; display: inline-block; vertical-align: top; margin: 0 7px; }
+.l-privilege .title span:before { content: ""; display: block; border-radius: 50%; z-index: -1; width: 32px; height: 32px; background-color: #fff; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.l-promotion, .l-work, .l-privilege { background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
+
+.l-work__in, .l-promotion__in, .l-privilege__in { padding: 33px 20px; }
 
 .steps { height: 888px; background-color: #fff; }
 .steps__in { padding: 95px 0; }
@@ -101,12 +112,51 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .step__content li, .step__content p { line-height: 18px; font-size: 12px; font-size: 1.2rem; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; color: #232323; position: relative; }
 .step__content li:before { content: "-"; font-size: 12px; font-size: 1.2rem; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; position: absolute; top: 0; bottom: 0; left: -7px; margin: auto; }
 
+.privilege { background-color: #fff; }
+.privilege__in { padding: 192px 0 68px; }
+.privilege .magnit { margin: 35px auto 40px; }
+.privilege .priv { height: 136px; background-color: #facc26; margin-bottom: 30px; position: relative; }
+.privilege .priv:before { content: ""; display: block; position: absolute; right: 100%; top: 0; height: 114px; width: 100px; background-color: #facc26; transform-origin: 100% 0; -ms-transform: rotate(-33deg); -webkit-transform: rotate(-33deg); transform: rotate(-33deg); }
+.privilege .priv:hover { background-color: #00bfff; }
+.privilege .priv:hover:before { background-color: #00bfff; }
+.privilege .priv:hover .priv__tringle, .privilege .priv:hover .numb { background-color: #00bfff; }
+.privilege .priv:hover .priv__tringle:before { border-top-color: #00a3ed; }
+.privilege .priv:hover .numb:before { border-bottom-color: #00bfff; }
+.privilege .priv:hover .priv__tail { background-color: #00bfff; }
+.privilege .priv:hover h4, .privilege .priv:hover p, .privilege .priv:hover .numb { color: #fff; }
+.privilege .priv .ico { position: absolute; left: 15px; top: 50%; -ms-transform: translate(0, -50%); transform: translate(0, -50%); }
+.privilege .priv__text { padding: 24px 40px 25px 140px; overflow: auto; height: 100%; }
+.privilege .priv__text h4 { margin-bottom: 11px; color: #232323; font-size: 20px; font-size: 2rem; font-family: "Bliss Pro ExtraBold", Arial, sans-serif; font-weight: 700; line-height: 20px; text-transform: uppercase; }
+.privilege .priv__text p { color: #232323; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; font-size: 14px; font-size: 1.4rem; font-weight: 200; line-height: 18px; }
+.privilege .priv__tringle { position: absolute; left: 100%; bottom: 0; background-color: #ffd626; width: 136px; height: 136px; }
+.privilege .priv__tringle:after { content: ""; display: block; border-bottom: 136px solid white; border-left: 136px solid transparent; position: absolute; bottom: 0; right: 0; background-color: transparent; }
+.privilege .priv__tringle:before { content: ""; display: block; border-top: 136px solid #f5ba0a; border-left: 20px solid transparent; position: absolute; right: 100%; top: 0; }
+.privilege .priv__tringle .numb { position: absolute; bottom: 100%; left: 0; background-color: #ffd626; width: 100%; height: 62px; color: #232323; }
+.privilege .priv__tringle .numb:before { content: ""; display: block; position: absolute; bottom: 100%; border-bottom: 106px solid #ffd626; border-left: 106px solid transparent; border-right: 106px solid transparent; left: 50%; -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.privilege .priv__tringle .numb span { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-family: "Bliss Pro Heavy", Arial, sans-serif; font-size: 68px; font-size: 6.8rem; line-height: 1; z-index: 100; }
+.privilege .priv__tail { content: ""; display: block; height: 114px; width: 500%; right: 100%; bottom: 0; position: absolute; background-color: #facc26; transform-origin: 100% 100%; -ms-transform-origin: 100% 100%; -ms-transform: rotate(-33deg); -webkit-transform: rotate(-33deg); transform: rotate(-33deg); }
+.privilege .priv.is-one { width: 458px; }
+.privilege .priv.is-one:hover .ico-rise-search { background: url("../img/svg/ico-rise-search-h.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
+.privilege .priv.is-one h4 { width: 255px; }
+.privilege .priv.is-one p { width: 276px; }
+.privilege .priv.is-two { width: 606px; }
+.privilege .priv.is-two:hover .ico-rise-tr { background: url("../img/svg/ico-rise-tr-h.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
+.privilege .priv.is-two h4 { width: 255px; }
+.privilege .priv.is-two p { width: 309px; }
+.privilege .priv.is-three { width: 765px; }
+.privilege .priv.is-three:hover .ico-rise-au { background: url("../img/svg/ico-rise-au-h.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
+.privilege .priv.is-three h4 { width: 518px; }
+.privilege .priv.is-three p { width: 518px; }
+.privilege__res { color: #232323; font-size: 76px; font-size: 7.6rem; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; text-align: center; line-height: 1.2; padding-top: 10px; }
+.privilege__res span { display: block; line-height: 1; font-family: "Bliss Pro ExtraBold", Arial, sans-serif; font-size: 55px; font-size: 5.5rem; }
+.privilege .btn-profit { margin: auto; width: 300px; display: block; border: none; }
+
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-.logo { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-se5c046c737.png') 0 -125px no-repeat; width: 212px; height: 37px; }
+.logo { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-sfee331a205.png') 0 -175px no-repeat; width: 212px; height: 37px; }
 
 .nav { font-size: 0; }
 .nav li { display: inline-block; margin-right: 18px; }
@@ -117,7 +167,14 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .title { min-height: 60px; border: 2px solid white; text-align: center; color: #fff; padding: 10px 20px; margin: auto; }
 .title h2 { font-family: "Bliss Pro", Arial, sans-serif; font-size: 30px; font-size: 3rem; line-height: 1.2; text-transform: uppercase; }
 
-.btn-tell { height: 29px; line-height: 29px; text-align: center; padding: 0 14px; background-color: #f7e357; }
-.btn-tell:hover { background-color: #f5db26; }
-.btn-tell:active { background-color: #f5db26; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.39); }
-.btn-tell span { color: #232323; font-family: "Bliss Pro Bold", Arial, sans-serif; font-size: 16px; font-size: 1.6rem; font-weight: 700; line-height: 24px; }
+.btn-tell, .btn-profit { height: 29px; line-height: 29px; text-align: center; padding: 0 14px; background-color: #f7e357; }
+.btn-tell:hover, .btn-profit:hover { background-color: #f5db26; }
+.btn-tell:active, .btn-profit:active { background-color: #f5db26; box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.39); }
+.btn-tell span, .btn-profit span { color: #232323; font-family: "Bliss Pro Bold", Arial, sans-serif; font-size: 16px; font-size: 1.6rem; font-weight: 700; line-height: 24px; }
+
+.btn-profit { height: 77px; line-height: 85px; text-align: center; padding: 0 15px; }
+.btn-profit span { font-family: "Bliss Pro ExtraBold", Arial, sans-serif; font-size: 26px; font-size: 2.6rem; color: #232323; text-transform: uppercase; }
+.btn-profit:active { box-shadow: inset 1.5px 2.6px 5px rgba(0, 0, 0, 0.4); }
+
+.magnit { width: 219px; height: 219px; background-color: #00bfff; border-radius: 50%; position: relative; }
+.magnit .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
