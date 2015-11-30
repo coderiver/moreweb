@@ -67,6 +67,8 @@ body
 a
 	text-decoration: none
 	+tr(all 0.3s)
+button
+	+tr(all .2s)	
 
 h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td
 	font-weight: normal
@@ -200,6 +202,7 @@ $col: #ffd640
 .promotion
 	height: 391px
 	background-color: $yellow
+	overflow: hidden
 	&__in
 		@extend .in 
 		height: 100%
@@ -262,6 +265,20 @@ $col: #ffd640
 		position: absolute
 		bottom: 80px
 		left: 40px
+
+	.user-form
+		position: absolute
+		top: 81px
+		right: 52px
+		z-index: 999
+
+	.diagram
+		+png(diagrama)
+		position: absolute
+		top: 0
+		right: 159px
+		-webkit-animation: hide-show 2.5s infinite ease-in-out
+		animation: hide-show 2.5s infinite ease-in-out
 
 
 //l-promotion
@@ -744,4 +761,20 @@ $col: #ffd640
 		opacity: 1
 	100%
 		right: 100%	
-		opacity: 0		
+		opacity: 0
+
+@keyframes hide-show
+	0%
+		top: 0
+	50%
+		top: -36px
+	100%
+		top: 0
+
+@-webkit-keyframes hide-show
+	0%
+		top: 0
+	50%
+		top: -36px
+	100%
+		top: 0

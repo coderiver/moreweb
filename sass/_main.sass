@@ -228,4 +228,69 @@
 			top: 34px + 104px
 			right: 65%
 			-webkit-animation-delay: .2s
-			animation-delay: .2s	
+			animation-delay: .2s
+
+//user-form
+.user-form
+	width: 187px
+	position: relative
+
+	> div
+		display: block
+		margin-bottom: 5px
+
+	input
+		height: 31px
+		background-color: #FFF
+		opacity: 0.35
+		display: block
+		width: 100%
+		+tr(all 0.4s)
+		padding: 5px 15px 5px 40px
+		+fs(14)
+		font-weight: 200
+		color: $black
+		+extralight
+		+placeholder-color(#bfb591)
+			
+		&:focus
+			opacity: 1
+
+	.name, .tel, .web, .mail
+		position: relative
+		&:before
+			display: block
+			content: ''
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			z-index: 20
+	.name:before
+		+s(ico-name)
+		left: 15px
+	.tel:before
+		+s(ico-tel)
+		left: 16px
+	.web:before
+		+s(ico-web)
+		left: 14px
+	.mail:before
+		+s(ico-mail)
+		left: 15px
+
+	.btn-start
+		+fs(18)
+		color: white
+		font-weight: 700
+		line-height: 52px
+		height: 52px
+		text-transform: uppercase
+		display: block
+		background-color: $blue
+		width: 100%
+		+tr(all .2s)
+		&:hover
+			background-color: #00a2ff
+		&:active
+			background-color: #007eff
+			box-shadow: inset 1px 1.7px 3px rgba(0, 0, 0, 0.33)
