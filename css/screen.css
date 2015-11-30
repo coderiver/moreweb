@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .ico.ico-rise-tr { background: url("../img/svg/ico-rise-tr.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
 .ico.ico-magnit { background: url('../img/icons-sfee331a205.png') 0 0 no-repeat; width: 81px; height: 165px; }
 
-.in, .header__in, .l-work__in, .l-promotion__in, .l-privilege__in, .steps__in, .privilege__in { width: 960px; margin: auto; padding: 0 20px; position: relative; }
+.in, .header__in, .promotion__in, .l-steps__in, .l-promotion__in, .l-privilege__in, .steps__in, .privilege__in { width: 960px; margin: auto; padding: 0 20px; position: relative; }
 
 .btn { height: 29px; line-height: 29px; text-align: center; padding: 0 16px; }
 .btn.is-yellow { background-color: #f7e357; }
@@ -70,20 +70,25 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .header .nav { overflow: hidden; margin: 0 206px 0 268px; padding-top: 35px; }
 .header .btn-tell { float: right; margin-top: 32px; }
 
+.promotion { height: 391px; background-color: #f7e357; }
+.promotion__in { padding: 0; height: 100%; min-height: 100%; }
+.promotion__slider { height: 100%; min-height: 100%; position: relative; }
+.promotion .equalizer { position: absolute; bottom: 0; left: 40px; }
+
 .l-promotion { background: url("../img/line1.png") no-repeat 0 0; width: 1920px; height: 126px; }
 .l-promotion .title { width: 100%; }
 
-.l-work { background: url("../img/line2.png") no-repeat 0 0; width: 1920px; height: 126px; }
-.l-work .title { width: 397px; }
+.l-steps { background: url("../img/line2.png") no-repeat 0 0; width: 1920px; height: 126px; }
+.l-steps .title { width: 397px; }
 
 .l-privilege { background: url("../img/line3.png") no-repeat 0 0; width: 1920px; height: 126px; }
 .l-privilege .title { width: 782px; }
 .l-privilege .title span { font-family: "Bliss Pro Heavy", Arial, sans-serif; color: #00bfff; position: relative; z-index: 10; display: inline-block; vertical-align: top; margin: 0 7px; }
 .l-privilege .title span:before { content: ""; display: block; border-radius: 50%; z-index: -1; width: 32px; height: 32px; background-color: #fff; position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
-.l-promotion, .l-work, .l-privilege { background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
+.l-promotion, .l-steps, .l-privilege { background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: auto; min-height: 126px; }
 
-.l-work__in, .l-promotion__in, .l-privilege__in { padding: 33px 20px; }
+.l-steps__in, .l-promotion__in, .l-privilege__in { padding: 33px 20px; }
 
 .steps { height: 888px; background-color: #fff; }
 .steps__in { padding: 95px 0; }
@@ -178,3 +183,41 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 
 .magnit { width: 219px; height: 219px; background-color: #00bfff; border-radius: 50%; position: relative; }
 .magnit .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.equalizer { font-size: 0; max-width: 462px; }
+.equalizer .col { position: relative; display: inline-block; vertical-align: bottom; margin-right: 7px; width: 29px; }
+.equalizer .col:before { content: ""; position: absolute; bottom: 0; left: 0; right: 0; background-color: #ffd640; -webkit-animation: equa 1.4s infinite ease-in-out; animation: equa 1.4s infinite ease-in-out; }
+.equalizer .col:last-child { margin-right: 0; }
+.equalizer .col.col1 { height: 86px; }
+.equalizer .col.col1:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+.equalizer .col.col2 { height: 181px; }
+.equalizer .col.col2:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+.equalizer .col.col3 { height: 159px; }
+.equalizer .col.col3:before { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+.equalizer .col.col4 { height: 262px; }
+.equalizer .col.col4:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+.equalizer .col.col5 { height: 191px; }
+.equalizer .col.col5:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.equalizer .col.col6 { height: 157px; }
+.equalizer .col.col6:before { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+.equalizer .col.col7 { height: 240px; }
+.equalizer .col.col7:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+.equalizer .col.col8 { height: 148px; }
+.equalizer .col.col8:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.equalizer .col.col9 { height: 200px; }
+.equalizer .col.col9:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+.equalizer .col.col10 { height: 226px; }
+.equalizer .col.col10:before { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+.equalizer .col.col11 { height: 183px; }
+.equalizer .col.col11:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+.equalizer .col.col12 { height: 140px; }
+.equalizer .col.col12:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+.equalizer .col.col13 { height: 193px; }
+.equalizer .col.col13:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+
+@keyframes equa { from { top: 0; }
+  50% { top: 50%; }
+  to { top: 0; } }
+@-webkit-keyframes equa { from { top: 0; }
+  50% { top: 50%; }
+  to { top: 0; } }

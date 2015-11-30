@@ -196,6 +196,26 @@ $col: #ffd640
 		float: right
 		margin-top: 32px
 
+//promotion
+.promotion
+	height: 391px
+	background-color: $yellow
+	&__in
+		@extend .in 
+		padding: 0
+		height: 100%
+		min-height: 100%
+	&__slider
+		height: 100%
+		min-height: 100%
+		position: relative
+
+	.equalizer
+		position: absolute
+		bottom: 0
+		left: 40px	
+
+
 //l-promotion
 .l-promotion
 	+png(line1)
@@ -204,8 +224,8 @@ $col: #ffd640
 		width: 100%	
 
 
-//l-work
-.l-work
+//l-steps
+.l-steps
 	+png(line2)
 
 	.title
@@ -236,15 +256,17 @@ $col: #ffd640
 				background-color: $white
 				+vcenter
 
-.l-promotion, .l-work, .l-privilege
+.l-promotion, .l-steps, .l-privilege
 	+cover	
 	width: 100%
 	height: auto
 	min-height: 126px	
 
-.l-work__in, .l-promotion__in, .l-privilege__in
+.l-steps__in, .l-promotion__in, .l-privilege__in
 	@extend .in
 	padding: 33px 20px			
+
+
 
 //steps
 .steps

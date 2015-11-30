@@ -85,3 +85,113 @@
 	position: relative
 	.ico 
 		+vcenter		
+
+
+//equalizer
+.equalizer
+	font-size: 0
+	max-width: 462px
+	// max-height: 262px
+	// height: 100%
+	// position: absolute
+	// bottom: 0
+	.col
+		position: relative
+		display: inline-block
+		vertical-align: bottom
+		margin-right: 7px
+		width: 29px
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			background-color: #ffd640
+			-webkit-animation: equa 1.4s infinite ease-in-out
+			animation: equa 1.4s infinite ease-in-out
+
+		&:last-child
+			margin-right: 0
+
+		&.col1
+			height: 86px
+			&:before
+				-webkit-animation-delay: .2s
+				animation-delay: .2s
+		&.col2
+			height: 181px
+			&:before
+				-webkit-animation-delay: .4s
+				animation-delay: .4s
+		&.col3
+			height: 159px
+			&:before
+				-webkit-animation-delay: .6s
+				animation-delay: .6s
+		&.col4
+			height: 262px
+			&:before
+				-webkit-animation-delay: .2s
+				animation-delay: .2s
+		&.col5
+			height: 191px
+			&:before
+				-webkit-animation-delay: .3s
+				animation-delay: .3s
+		&.col6
+			height: 157px
+			&:before
+				-webkit-animation-delay: .6s
+				animation-delay: .6s
+		&.col7
+			height: 240px
+			&:before
+				-webkit-animation-delay: .2s
+				animation-delay: .2s
+		&.col8
+			height: 148px
+			&:before
+				-webkit-animation-delay: .3s
+				animation-delay: .3s
+		&.col9
+			height: 200px
+			&:before
+				-webkit-animation-delay: .4s
+				animation-delay: .4s
+		&.col10
+			height: 226px
+			&:before
+				-webkit-animation-delay: .6s
+				animation-delay: .6s
+		&.col11
+			height: 183px
+			&:before
+				-webkit-animation-delay: .2s
+				animation-delay: .2s
+		&.col12
+			height: 140px
+			&:before
+				-webkit-animation-delay: .4s
+				animation-delay: .4s
+		&.col13
+			height: 193px
+			&:before
+				-webkit-animation-delay: .3s
+				animation-delay: .3s
+
+@keyframes equa 
+	from 
+		top: 0
+	50%
+		top: 50%
+	to 
+		top: 0	
+
+@-webkit-keyframes equa 
+	from 
+		top: 0
+	50%
+		top: 50%
+	to 
+		top: 0			
