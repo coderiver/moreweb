@@ -132,4 +132,24 @@
 		border-radius: 50% 
 		&:hover
 			box-shadow: none
-	
+
+
+.slider.slick-slider
+	.slick-prev,
+	.slick-next
+		display: none !important
+
+	.slick-dots
+		z-index: 100
+		margin-bottom: 15px
+		right: inherit
+		left: 540px
+		li.slick-active
+			button
+				background-color: #FFF
+				opacity: 1
+		button
+			width: 18px
+			height: 18px
+			background-color: #ffd640
+			box-shadow: none

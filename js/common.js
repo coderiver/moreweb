@@ -15,5 +15,10 @@ head.ready(function() {
 	//     scrollFixedElements()
 	// });
 
-	console.log($('body').html());
+	$('.js-promo-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		fade: true,
+	});
 });
