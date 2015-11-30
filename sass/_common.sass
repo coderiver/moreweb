@@ -214,7 +214,7 @@ $col: #ffd640
 		width: 622px
 		height: 391px
 		&__text
-			padding: 25px 42px 10px 60px
+			padding: 25px 42px 10px 40px
 		h3,p 
 			color: $black
 		h3 
@@ -245,15 +245,23 @@ $col: #ffd640
 			z-index: 10
 			opacity: 0
 			+tr(all 5s)
+		
 		&.slide2.slick-active
 			img.people
 				opacity: 1
 				+scale(1.2)
+				-webkit-animation: people-scale 2.5s infinite ease-in-out
+				animation: people-scale 2.5s infinite ease-in-out
 	.equalizer
 		position: absolute
 		bottom: 0
 		left: 40px
 		z-index: 1
+
+	.money-m
+		position: absolute
+		bottom: 80px
+		left: 40px
 
 
 //l-promotion
@@ -675,3 +683,65 @@ $col: #ffd640
 		display: block
 		border: none		
 
+
+
+
+
+
+
+//KEYFRAMES
+@keyframes equa 
+	0%
+		top: 0
+	50%
+		top: 50%
+	100% 
+		top: 0	
+
+@-webkit-keyframes equa 
+	0% 
+		top: 0
+	50%
+		top: 50%
+	100% 
+		top: 0
+
+@keyframes people-scale
+	0%
+		+scale(1)
+	50%
+		+scale(1.1)
+	100%
+		+scale(1)		
+
+@-webkit-keyframes people-scale
+	0%
+		+scale(1)
+	50%
+		+scale(1.1)
+	100%
+		+scale(1)
+
+@keyframes fly
+	0%
+		right: 0
+		opacity: 0
+	20%
+		opacity: 1
+	80%
+		opacity: 1
+	100%
+		right: 100%	
+		opacity: 0
+
+@-webkit-keyframes fly
+	0%
+		right: 0
+		opacity: 0
+	20%
+		opacity: 1
+	80%
+		opacity: 1
+	100%
+		right: 100%	
+		opacity: 0		

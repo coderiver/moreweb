@@ -176,18 +176,56 @@
 				-webkit-animation-delay: .3s
 				animation-delay: .3s
 
-@keyframes equa 
-	from 
-		top: 0
-	50%
-		top: 50%
-	to 
-		top: 0	
 
-@-webkit-keyframes equa 
-	from 
+//money-m
+.money-m
+	+png(magnit)
+	position: relative
+
+	&__in
+		position: absolute
+		left: 185px
+		right: 102px
 		top: 0
-	50%
-		top: 50%
-	to 
-		top: 0			
+		bottom: 0
+		margin: auto
+		overflow: hidden
+
+	.dollar
+		position: absolute
+		+s(money)
+		-webkit-animation: fly .8s infinite linear
+		animation: fly .8s infinite linear
+		&.dollar1
+			top: 26px
+			right: 43px
+		&.dollar2
+			top: 34px
+			right: 95%
+			-webkit-animation-delay: .3s
+			animation-delay: .3s
+		&.dollar3
+			top: 34px + 30px
+			right: 10%
+			-webkit-animation-delay: .4s
+			animation-delay: .4s
+		&.dollar4
+			top: 34px + 36px
+			right: 50%
+			-webkit-animation-delay: .7s
+			animation-delay: .7s
+		&.dollar5
+			top: 34px + 85px
+			right: 20%
+			-webkit-animation-delay: .3s
+			animation-delay: .3s
+		&.dollar6
+			top: 34px + 87px
+			right: 80%
+			-webkit-animation-delay: .7s
+			animation-delay: .7s
+		&.dollar7
+			top: 34px + 104px
+			right: 65%
+			-webkit-animation-delay: .2s
+			animation-delay: .2s	

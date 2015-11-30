@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .ico.ico-rise-search { background: url("../img/svg/ico-rise-search.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
 .ico.ico-rise-au { background: url("../img/svg/ico-rise-au.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
 .ico.ico-rise-tr { background: url("../img/svg/ico-rise-tr.svg") no-repeat 0 0; -moz-background-size: 94px 93px; -o-background-size: 94px 93px; -webkit-background-size: 94px 93px; background-size: 94px 93px; width: 94px; height: 93px; display: inline-block; }
-.ico.ico-magnit { background: url('../img/icons-sfee331a205.png') 0 0 no-repeat; width: 81px; height: 165px; }
+.ico.ico-magnit { background: url('../img/icons-s2be4ba7d7e.png') 0 0 no-repeat; width: 81px; height: 165px; }
 
 .in, .header__in, .promotion__in, .l-steps__in, .l-promotion__in, .l-privilege__in, .steps__in, .privilege__in { width: 960px; margin: auto; padding: 0 20px; position: relative; }
 
@@ -75,14 +75,15 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .promotion__in { height: 100%; min-height: 100%; }
 .promotion .slider { height: 100%; min-height: 100%; position: relative; z-index: 100; }
 .promotion .slide { width: 622px; height: 391px; }
-.promotion .slide__text { padding: 25px 42px 10px 60px; }
+.promotion .slide__text { padding: 25px 42px 10px 40px; }
 .promotion .slide h3, .promotion .slide p { color: #232323; }
 .promotion .slide h3 { font-family: "Bliss Pro ExtraBold", Arial, sans-serif; font-size: 30px; font-weight: 700; line-height: 1.2; max-width: 520px; margin-bottom: 5px; }
 .promotion .slide p { font-family: "Bliss Pro ExtraLight", Arial, sans-serif; font-size: 18px; font-weight: 200; line-height: 1.2; max-width: 495px; }
 .promotion .slide img.manager { position: absolute; bottom: 1px; left: 107px; z-index: 10; }
 .promotion .slide img.people { position: absolute; bottom: 33px; left: 36px; z-index: 10; opacity: 0; -moz-transition: all 5s; -o-transition: all 5s; -webkit-transition: all 5s; transition: all 5s; }
-.promotion .slide.slide2.slick-active img.people { opacity: 1; -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); }
+.promotion .slide.slide2.slick-active img.people { opacity: 1; -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2); -webkit-animation: people-scale 2.5s infinite ease-in-out; animation: people-scale 2.5s infinite ease-in-out; }
 .promotion .equalizer { position: absolute; bottom: 0; left: 40px; z-index: 1; }
+.promotion .money-m { position: absolute; bottom: 80px; left: 40px; }
 
 .l-promotion { background: url("../img/line1.png") no-repeat 0 0; width: 1920px; height: 126px; }
 .l-promotion .title { width: 100%; }
@@ -165,12 +166,32 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .privilege__res span { display: block; line-height: 1; font-family: "Bliss Pro ExtraBold", Arial, sans-serif; font-size: 55px; font-size: 5.5rem; }
 .privilege .btn-profit { margin: auto; width: 300px; display: block; border: none; }
 
+@keyframes equa { 0% { top: 0; }
+  50% { top: 50%; }
+  100% { top: 0; } }
+@-webkit-keyframes equa { 0% { top: 0; }
+  50% { top: 50%; }
+  100% { top: 0; } }
+@keyframes people-scale { 0% { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+  50% { -ms-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
+  100% { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); } }
+@-webkit-keyframes people-scale { 0% { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+  50% { -ms-transform: scale(1.1); -webkit-transform: scale(1.1); transform: scale(1.1); }
+  100% { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); } }
+@keyframes fly { 0% { right: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { right: 100%; opacity: 0; } }
+@-webkit-keyframes fly { 0% { right: 0; opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { right: 100%; opacity: 0; } }
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
-.logo { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-sfee331a205.png') 0 -175px no-repeat; width: 212px; height: 37px; }
+.logo { font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s2be4ba7d7e.png') 0 -175px no-repeat; width: 212px; height: 37px; }
 
 .nav { font-size: 0; }
 .nav li { display: inline-block; margin-right: 18px; }
@@ -224,12 +245,17 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .equalizer .col.col13 { height: 193px; }
 .equalizer .col.col13:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
 
-@keyframes equa { from { top: 0; }
-  50% { top: 50%; }
-  to { top: 0; } }
-@-webkit-keyframes equa { from { top: 0; }
-  50% { top: 50%; }
-  to { top: 0; } }
+.money-m { background: url("../img/magnit.png") no-repeat 0 0; width: 454px; height: 155px; position: relative; }
+.money-m__in { position: absolute; left: 185px; right: 102px; top: 0; bottom: 0; margin: auto; overflow: hidden; }
+.money-m .dollar { position: absolute; background: url('../img/icons-s2be4ba7d7e.png') 0 -222px no-repeat; width: 24px; height: 11px; -webkit-animation: fly 0.8s infinite linear; animation: fly 0.8s infinite linear; }
+.money-m .dollar.dollar1 { top: 26px; right: 43px; }
+.money-m .dollar.dollar2 { top: 34px; right: 95%; -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.money-m .dollar.dollar3 { top: 64px; right: 10%; -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+.money-m .dollar.dollar4 { top: 70px; right: 50%; -webkit-animation-delay: 0.7s; animation-delay: 0.7s; }
+.money-m .dollar.dollar5 { top: 119px; right: 20%; -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.money-m .dollar.dollar6 { top: 121px; right: 80%; -webkit-animation-delay: 0.7s; animation-delay: 0.7s; }
+.money-m .dollar.dollar7 { top: 138px; right: 65%; -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
