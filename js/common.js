@@ -21,4 +21,20 @@ head.ready(function() {
 		dots: true,
 		fade: true,
 	});
+
+	$('.js-progress-gal-t').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		asNavFor: '.js-progress-gal-b',
+		focusOnSelect: true
+	});
+
+	$('.js-progress-gal-b').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		// touchMove: false,
+		fade: true,
+		asNavFor: '.js-progress-gal-t',
+		
+	});
 });

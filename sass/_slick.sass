@@ -153,3 +153,159 @@
 			height: 18px
 			background-color: #ffd640
 			box-shadow: none
+
+.gallery-top.slick-slider
+	.slick-prev,
+	.slick-next
+		display: none !important
+
+	.item 
+		padding: 54px 0 80px
+		+gray
+		cursor: pointer
+		+tr(all .4s)
+		text-align: center
+		&:hover
+			+scale(1.2)
+			filter: none
+			-webkit-filter: none
+			filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)
+			-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=0)"
+
+		> img 
+			margin: auto
+
+.gallery-bot.slick-slider
+	padding: 0 108px
+
+	.slick-prev,
+	.slick-next
+		top: 110px
+
+	.slick-prev:before,
+	.slick-next:before
+		+hide-text
+	
+	.slick-prev
+		+s(arr-left)
+
+	.slick-next
+		+s(arr-right)	
+
+	.slide
+		font-size: 0
+
+		&__inner
+			padding: 30px 34px 47px
+			border: 2px solid $blue
+		&__title
+			+fs(30)
+			line-height: 1.2
+			+extralight
+			text-transform: uppercase
+			color: $black
+			margin-bottom: 10px
+		.numb 
+			+heavy
+			+fs(70)
+			color: $blue
+			padding-right: 10px
+			line-height: 1
+			letter-spacing: -0.05em
+			&.is-mod
+				padding: 0
+			span
+				+fs(36)	
+		.content
+			+fs(16)
+			+extralight
+			margin-bottom: 6px
+			position: relative
+			
+			p 
+				color: $blue
+				+bold
+
+			.top
+				position: absolute
+				top: 12px
+
+			.bot
+				.ico.ico_mod
+					margin-left: 4px
+
+		&__info
+			position: relative
+			overflow: hidden
+
+			.ico 
+				position: absolute
+				top: 37px
+				left: 50px
+
+			.text 
+				+fs(30)
+				line-height: 1
+				+reg
+				padding: 34px 65px 34px 140px
+
+		&.slide2
+			.slide__info
+				.ico
+					left: 110px
+				.text
+					padding-left: 198px
+
+		&.slide3
+			.slide__info
+				.ico
+					left: 46px
+				.text
+					padding-left: 134px
+					padding-right: 40px
+					+fs(24)
+
+		&.slide4
+			.slide__inner
+				padding-bottom: 26px
+
+		&.slide5
+			.slide__info
+				.ico
+					left: 25px
+				.text 
+					+fs(24)
+					padding-left: 116px
+					padding-right: 18px
+
+	.col
+		display: inline-block
+		vertical-align: top
+		padding-right: 20px
+		margin-bottom: 20px
+		&.col_mod
+			margin-bottom: 0
+
+
+	.col2 
+		width: 16.666666666666668%
+
+	.col3
+		width: 25%	
+
+	.col4 
+		width: 33.3%
+
+	.col5
+		width: 41.66666666666667%	
+
+	.col6
+		width: 50%
+
+	.col7
+		width: 58.333333333333336%	
+
+	.col8 
+		width: 66.66666666666667%
+
+

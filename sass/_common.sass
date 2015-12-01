@@ -126,7 +126,20 @@ $col: #ffd640
 	&.ico-rise-tr
 		+svg(ico-rise-tr, 94, 93)	
 	&.ico-magnit
-		+s(ico-magnit)						
+		+s(ico-magnit)
+	&.ico-plus
+		+s(ico-plus)
+	&.ico-note
+		+s(ico-note)
+	&.ico-logo-gall
+		+s(logo-gall)
+	&.ico-arrow
+		+s(ico-arrow)
+	&.ico-arrow-half
+		+s(ico-arrow-half)	
+	&.ico-trafic
+		+s(ico-trafic)		
+
 
 
 //extend
@@ -166,6 +179,16 @@ $col: #ffd640
 	&.btn_lg
 		height: 77px
 		line-height: 77px	
+
+//state
+.is-left
+	text-align: left
+
+.is-right
+	text-align: right
+
+.is-center
+	text-align: center		
 
 
 
@@ -321,13 +344,20 @@ $col: #ffd640
 				background-color: $white
 				+vcenter
 
-.l-promotion, .l-steps, .l-privilege
+//l-progress
+.l-progress
+	+png(line2)
+
+	.title
+		width: 445px
+
+.l-promotion, .l-steps, .l-privilege, .l-progress
 	+cover	
 	width: 100%
 	height: auto
 	min-height: 126px	
 
-.l-steps__in, .l-promotion__in, .l-privilege__in
+.l-steps__in, .l-promotion__in, .l-privilege__in, .l-progress__in
 	@extend .in
 	padding: 33px 20px			
 
@@ -700,7 +730,12 @@ $col: #ffd640
 		display: block
 		border: none		
 
-
+//progress
+.progress
+	min-height: 818px
+	&__in
+		@extend .in 
+		height: 818px
 
 
 
