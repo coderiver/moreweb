@@ -230,16 +230,18 @@
 			-webkit-animation-delay: .2s
 			animation-delay: .2s
 
-//user-form
-.user-form
-	width: 187px
+//top-form
+.top-form
+	// width: 187px
 	position: relative
 
 	> div
 		display: block
 		margin-bottom: 5px
-
-	input
+//input
+.input
+	width: 187px
+	input[type=text]
 		height: 31px
 		background-color: #FFF
 		opacity: 0.35
@@ -256,7 +258,7 @@
 		&:focus
 			opacity: 1
 
-	.name, .tel, .web, .mail
+	&.input_name, &.input_tel, &.input_web, &.input_mail
 		position: relative
 		&:before
 			display: block
@@ -264,33 +266,46 @@
 			position: absolute
 			top: 50%
 			transform: translate(0, -50%)
-			z-index: 20
-	.name:before
+			z-index: 9999
+	&.input_name:before
 		+s(ico-name)
 		left: 15px
-	.tel:before
+	&.input_tel:before
 		+s(ico-tel)
 		left: 16px
-	.web:before
+	&.input_web:before
 		+s(ico-web)
 		left: 14px
-	.mail:before
+	&.input_mail:before
 		+s(ico-mail)
 		left: 15px
 
-	.btn-start
-		+fs(18)
-		color: white
-		font-weight: 700
-		line-height: 52px
-		height: 52px
-		text-transform: uppercase
-		display: block
-		background-color: $blue
-		width: 100%
-		+tr(all .2s)
-		&:hover
-			background-color: #00a2ff
-		&:active
-			background-color: #007eff
-			box-shadow: inset 1px 1.7px 3px rgba(0, 0, 0, 0.33)
+.btn-start
+	+fs(18)
+	color: white
+	font-weight: 700
+	line-height: 52px
+	height: 52px
+	text-transform: uppercase
+	display: block
+	background-color: $blue
+	width: 187px
+	&:hover
+		background-color: #00a2ff
+	&:active
+		background-color: #007eff
+		box-shadow: inset 1px 1.7px 3px rgba(0, 0, 0, 0.33)
+
+.btn-start-lg
+	+fs(24)
+	font-weight: 700
+	color: $black
+	background-color: $yellow
+	height: 71px
+	line-height: 71px
+	width: 248px
+	&:hover
+		background-color: #ffd735
+	&:active
+		box-shadow: inset 1.5px 2.6px 5px rgba(0, 0, 0, 0.4)
+		background-color: #ffcc02

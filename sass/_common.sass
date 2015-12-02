@@ -289,7 +289,7 @@ $col: #ffd640
 		bottom: 80px
 		left: 40px
 
-	.user-form
+	.top-form
 		position: absolute
 		top: 81px
 		right: 52px
@@ -944,7 +944,54 @@ $col: #ffd640
 			text-align: center
 			width: 244px !important
 
+//bottom
+.bottom
+	+png(line7)
+	width: 100%
+	+cover
+	font-size: 0
 
+	&__in
+		@extend .in
+		text-align: center
+		padding: 62px 0
+
+	.col
+		display: inline-block
+		vertical-align: top
+		padding-right: 52px
+
+	.bottom__form
+		.input
+			margin-bottom: 9px
+			&:nth-child(even)
+				margin-bottom: 0
+
+//footer
+.footer
+	height: 118px
+	background-color: $yellow
+
+	&__in
+		@extend .in
+		padding: 34px 80px
+		+clr
+	
+	.logo-ft
+		float: right
+		+s(logo-ft)
+
+	.copy
+		max-width: 345px
+		float: left
+		+extralight
+		color: $black
+		+fs(20)
+		span
+			text-transform: uppercase
+			line-height: 1
+		p
+			line-height: 1
 
 //KEYFRAMES
 @keyframes equa 
