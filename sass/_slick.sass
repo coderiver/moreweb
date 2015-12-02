@@ -308,4 +308,30 @@
 	.col8 
 		width: 66.66666666666667%
 
+.gallery-awards.slick-slider
+	height: 260px
+	padding: 42px 0
+	font-size: 0
 
+	.slick-prev:before,
+	.slick-next:before
+		+hide-text
+	
+	.slick-prev
+		+s(arr-left)
+		left: -50px
+
+	.slick-next
+		+s(arr-right)
+		right: -50px
+
+	.award.slick-slide
+		height: 176px
+		float: none !important
+		display: inline-block !important
+		+vertical
+
+	.slick-slide img
+		display: inline-block
+		vertical-align: bottom
+		height: auto

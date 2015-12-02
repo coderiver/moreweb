@@ -351,13 +351,20 @@ $col: #ffd640
 	.title
 		width: 445px
 
-.l-promotion, .l-steps, .l-privilege, .l-progress
+//l-awards
+.l-awards
+	+png(line5)
+
+	.title
+		width: 346px
+
+.l-promotion, .l-steps, .l-privilege, .l-progress, .l-awards
 	+cover	
 	width: 100%
 	height: auto
 	min-height: 126px	
 
-.l-steps__in, .l-promotion__in, .l-privilege__in, .l-progress__in
+.l-steps__in, .l-promotion__in, .l-privilege__in, .l-progress__in, .l-awards__in
 	@extend .in
 	padding: 33px 20px			
 
@@ -737,6 +744,50 @@ $col: #ffd640
 		@extend .in 
 		height: 818px
 
+//awards
+.awards
+	min-height: 507px
+
+	&__in
+		@extend .in
+		padding-bottom: 40px
+
+	.medals
+		min-height: 240px
+		text-align: center
+
+	.medal 
+		display: inline-block
+		vertical-align: top
+		padding: 0 40px
+		text-align: center
+		&__pic
+			display: inline-block
+			height: 140px
+			padding: 20px 0
+			+vertical
+			> img 
+				max-width: 100%
+				height: auto
+				display: inline-block
+				vertical-align: middle
+
+		h5 
+			+fs(30)
+			+extrabold
+			line-height: 1.2
+			color: $blue
+			margin-bottom: 5px
+			max-width: 205px
+
+
+		p
+			+fs(14)
+			max-width: 163px
+			+extralight
+			color: $black
+			line-height: 1.2
+			display: inline-block
 
 
 

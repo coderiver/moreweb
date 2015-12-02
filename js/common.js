@@ -35,6 +35,10 @@ head.ready(function() {
 		// touchMove: false,
 		fade: true,
 		asNavFor: '.js-progress-gal-t',
-		
+	});
+
+	$('.js-awards-gal').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
 	});
 });
