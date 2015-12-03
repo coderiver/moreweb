@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 
 .is-center { text-align: center; }
 
-.header { background-color: #fff; min-height: 95px; position: fixed; top: 0; left: 0; right: 0; z-index: 999; }
+.header { background-color: #fff; min-height: 95px; position: fixed; top: 0; left: 0; right: 0; z-index: 99999; }
 .header__in { *zoom: 1; }
 .header__in:after { content: " "; display: table; clear: both; }
 .header .logo { float: left; margin-top: 29px; }
