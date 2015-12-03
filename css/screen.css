@@ -235,14 +235,17 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .company .item.is-left { float: left; text-align: center; width: 244px !important; }
 .company .item.is-right { float: right; text-align: center; width: 244px !important; }
 
+.map { height: 603px; }
+
 .bottom { background: url("../img/line7.png") no-repeat 0 0; width: 1920px; height: 195px; width: 100%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; font-size: 0; }
 .bottom__in { text-align: center; padding: 62px 0; }
 .bottom .col { display: inline-block; vertical-align: top; padding-right: 52px; }
+.bottom .bottom__form { margin-right: -52px; }
 .bottom .bottom__form .input { margin-bottom: 9px; }
 .bottom .bottom__form .input:nth-child(even) { margin-bottom: 0; }
 
 .footer { height: 118px; background-color: #f7e357; }
-.footer__in { padding: 34px 80px; *zoom: 1; }
+.footer__in { padding: 34px 70px; *zoom: 1; }
 .footer__in:after { content: " "; display: table; clear: both; }
 .footer .logo-ft { float: right; background: url('../img/icons-seb04488b99.png') 0 -6496px no-repeat; width: 88px; height: 50px; }
 .footer .copy { max-width: 345px; float: left; font-family: "Bliss Pro ExtraLight", Arial, sans-serif; color: #232323; font-size: 20px; font-size: 2rem; }
