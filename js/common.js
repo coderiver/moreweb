@@ -15,11 +15,23 @@ head.ready(function() {
 	//     scrollFixedElements()
 	// });
 
+	$(".js-popup").on("click", function(){
+		$(".popup").toggleClass('is-active');
+	});
+
+	$(".btn-close").on("click", function(){
+		$(".popup").removeClass('is-active');
+	});
+
 	$('.js-promo-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
 		fade: true,
+		autoplay: true,
+		autoplaySpeed: 9000,
+		speed: 1000,
+		pauseOnHover: true,
 	});
 
 	$('.js-progress-gal-t').slick({
@@ -40,26 +52,31 @@ head.ready(function() {
 	$('.js-awards-gal').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		autoplay: true,
+		speed: 1000,
+		pauseOnHover: true,
 	});
 
 	//MAP
 	var map;
 	function initMap() {
 
-		var myLatLng = {lat: 55.774824, lng: 37.612028};
+		var myLatLng = {lat: 55.7747386, lng: 37.6202023};
 
 		var map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 16,
 			center: myLatLng,
+			disableDefaultUI: true,
+			draggable: false,
 			// mapTypeControl: false,
 			// streetViewControl: false,
 			scrollwheel: false,
 			// zoomControl : false,
-			disableDefaultUI: true,
+			
 		});
 
 		var marker = new google.maps.Marker({
-			position: myLatLng,
+			position: {lat: 55.774824, lng: 37.612028},
 			map: map,
 			title: 'Click to zoom!',
 			icon: 'img/marker.png'

@@ -23,7 +23,7 @@
 				<h1>оптимизм.ру</h1>
 				<span>настрой на результат</span>
 			</a>
-			<button class="btn-tell"><span>заказать звонок</span></button>
+			<button class="btn-tell js-popup"><span>заказать звонок</span></button>
 			<ul class="nav">
 				<li><a href="#">об услуге</a></li>
 				<li><a href="#">кейсы и достижения</a></li>
@@ -655,14 +655,41 @@
 		<!-- END l-contact -->
 	</section>
 	<!-- END l-contact -->
-	<!-- BEGIN map -->
-	<div class="map" id="map"></div>
-	<!-- END map -->
+	
+	<section class="map-wrap">
+		<!-- BEGIN map -->
+		<div class="map" id="map"></div>
+		<!-- END map -->
+		<div class="contact">
+			<div class="contact__in">
+				<div class="info">
+					<ul>
+						<li>
+							<i class="ico ico-tel-black"></i>
+							<p>+7 (495) 256-24-31, 8 800 333-54-72</p>
+						</li>
+						<li>
+							<i class="ico ico-calendar"></i>
+							<p>пн. — пт, с 10:00 до 19:00</p>
+						</li>
+						<li>
+							<i class="ico ico-marker"></i>
+							<p>119049, Москва, ул. Делегатская, дом 5</p>
+						</li>
+						<li>
+							<i class="ico ico-msg"></i>
+							<p>info@optimism.ru </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!-- BEGIN bottom -->
 	<section class="bottom">
 		<!-- BEGIN bottom__in -->
 		<div class="bottom__in">
-			<form action="" class="bottom__form">
+			<form action="" method="POST" class="bottom__form">
 				<div class="col">
 					<div class="input input_name"><input type="text" placeholder="Имя"></div>
 					<div class="input input_tel"><input type="text" placeholder="Телефон"></div>
@@ -692,6 +719,23 @@
 		<!-- END footer__in -->
 	</footer>
 	<!-- END footer -->
+	<!-- BEGIN popup -->
+	<div class="popup">
+		<!-- BEGIN popup__form -->
+		<div class="popup__form">
+			<button type="button" class="btn-close"></button>
+			<div class="top">Оставьте заявку на бесплатный звонок и мы Вам перезвоним</div>
+			<form action="">
+				<div class="input input_name"><input type="text" placeholder="Имя"></div>
+				<div class="input input_tel"><input type="text" placeholder="Телефон"></div>
+				<div class="input input_mail"><input type="text" placeholder="Адрес сайта"></div>
+				<div class="input input_web"><input type="text" placeholder="E-mail"></div>
+				<button type="button" class="btn is-blue btn-send">оставить заявку</button>
+			</form>
+		</div>
+		<!-- END popup__form -->
+	</div>
+	<!-- END popup -->
 </div>
 <!-- END out-->
 <!-- load scripts -->

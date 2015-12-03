@@ -62,6 +62,7 @@ body
 	margin: auto
 	overflow: hidden
 	padding-top: 95px
+	position: relative
 
 //reset
 a
@@ -138,7 +139,15 @@ $col: #ffd640
 	&.ico-arrow-half
 		+s(ico-arrow-half)	
 	&.ico-trafic
-		+s(ico-trafic)		
+		+s(ico-trafic)
+	&.ico-calendar
+		+s(ico-calendar)
+	&.ico-tel-black
+		+s(ico-tell-black)
+	&.ico-marker
+		+s(ico-marker)
+	&.ico-msg
+		+s(ico-msg)
 
 
 
@@ -202,7 +211,7 @@ $col: #ffd640
 	top: 0
 	left: 0
 	right: 0
-	z-index: 999999
+	z-index: 9999
 
 	&__in 
 		@extend .in
@@ -234,7 +243,7 @@ $col: #ffd640
 		height: 100%
 		min-height: 100%
 		position: relative
-		z-index: 100
+		z-index: 90
 
 	.slide
 		width: 622px
@@ -293,7 +302,7 @@ $col: #ffd640
 		position: absolute
 		top: 81px
 		right: 52px
-		z-index: 999
+		z-index: 91
 
 	.diagram
 		+png(diagrama)
@@ -479,7 +488,7 @@ $col: #ffd640
 		background-color: transparent
 		margin: auto
 		position: relative
-		z-index: 100
+		z-index: 90
 
 		ul 
 			display: none
@@ -689,7 +698,7 @@ $col: #ffd640
 					+heavy
 					+fs(68)
 					line-height: 1
-					z-index: 100
+					z-index: 99
 		
 		&__tail
 			content: ''
@@ -870,7 +879,7 @@ $col: #ffd640
 			width: 100%
 			height: 100%
 			background-color: rgba(0, 191, 255, .63)
-			z-index: 200
+			z-index: 99
 			opacity: 1
 
 		.top
@@ -883,7 +892,7 @@ $col: #ffd640
 			margin: auto
 			min-height: 157px
 			position: relative
-			z-index: 100
+			z-index: 90
 			&.is-mod
 				float: right
 		
@@ -896,7 +905,7 @@ $col: #ffd640
 			+fs(24)
 			+bold
 			position: relative
-			z-index: 100
+			z-index: 99
 			&.is-right
 				float: right
 				margin: 0 63px 0 0
@@ -913,7 +922,7 @@ $col: #ffd640
 				overflow: hidden
 				text-overflow: ellipsis
 				white-space:nowrap
-			p 
+			p
 				margin-bottom: 20px
 				line-height: 1
 
@@ -924,7 +933,7 @@ $col: #ffd640
 			line-height: 1
 			color: $white
 			position: relative
-			z-index: 100
+			z-index: 99
 			span
 				+fs(24)
 
@@ -944,9 +953,54 @@ $col: #ffd640
 			text-align: center
 			width: 244px !important
 
-//map
-.map
-	height: 603px
+//map-wrap
+.map-wrap
+	position: relative
+	.contact
+		position: absolute
+		top: 0
+		right: 0
+		bottom: auto
+		left: 0
+		&__in 
+			@extend .in
+			position: relative
+	
+		.info
+			position: absolute
+			top: 113px
+			right: 15px
+			width: 380px
+			height: 237px
+			overflow: hidden
+			background-color: rgba(247, 227, 87, .9)
+			z-index: 100
+
+
+			p 
+				padding: 0 0 0 30px
+				white-space: nowrap
+				overflow: hidden
+				text-overflow: ellipsis
+
+			ul
+				margin: 48px 30px 45px
+
+			li 
+				+fs(18)
+				font-weight: 200
+				line-height: 36px
+				+extralight
+				position: relative
+				.ico 
+					position: absolute
+					top: 0
+					bottom: 0
+					margin: auto
+
+	.map
+		height: 603px
+
 
 
 //bottom
@@ -988,7 +1042,7 @@ $col: #ffd640
 		+s(logo-ft)
 
 	.copy
-		max-width: 345px
+		max-width: 355px
 		float: left
 		+extralight
 		color: $black
