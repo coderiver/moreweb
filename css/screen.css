@@ -315,8 +315,19 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .btn-profit span { font-family: "Bliss Pro ExtraBold", Arial, sans-serif; font-size: 26px; font-size: 2.6rem; color: #232323; text-transform: uppercase; }
 .btn-profit:active { box-shadow: inset 1.5px 2.6px 5px rgba(0, 0, 0, 0.4); }
 
-.magnit { width: 219px; height: 219px; background-color: #00bfff; border-radius: 50%; position: relative; }
-.magnit .ico { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.magnit { width: 219px; height: 219px; background-color: #00bfff; border-radius: 50%; position: relative; cursor: pointer; }
+.magnit:hover .item.item1, .magnit:hover .item.item3 { bottom: -5px; left: 8px; }
+.magnit:hover .item.item2, .magnit:hover .item.item4 { bottom: -5px; right: 2px; }
+.magnit:hover .item.item1 { -ms-transform: rotate(-15deg); -webkit-transform: rotate(-15deg); transform: rotate(-15deg); }
+.magnit:hover .item.item2 { -ms-transform: rotate(200deg); -webkit-transform: rotate(200deg); transform: rotate(200deg); }
+.magnit:hover .item.item3 { -ms-transform: rotate(-9deg); -webkit-transform: rotate(-9deg); transform: rotate(-9deg); }
+.magnit:hover .item.item4 { -ms-transform: rotate(184deg); -webkit-transform: rotate(184deg); transform: rotate(184deg); }
+.magnit__pic { background: url("../img/magnito.png") no-repeat 0 0; width: 81px; height: 85px; top: 28px; left: 0; right: 0; margin: auto; position: absolute; }
+.magnit .item { width: 24px; height: 10px; border-radius: 50%; background-color: transparent; border: 4px solid #fff; position: absolute; z-index: 1; -moz-transition: all 0.3s; -o-transition: all 0.3s; -webkit-transition: all 0.3s; transition: all 0.3s; }
+.magnit .item.item1 { bottom: -22px; left: 12px; -ms-transform: rotate(-42deg); -webkit-transform: rotate(-42deg); transform: rotate(-42deg); }
+.magnit .item.item2 { bottom: -38px; right: 16px; height: 14px; -ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+.magnit .item.item3 { bottom: -67px; left: 22px; height: 14px; -ms-transform: rotate(-50deg); -webkit-transform: rotate(-50deg); transform: rotate(-50deg); }
+.magnit .item.item4 { bottom: -65px; right: 2px; -ms-transform: rotate(85deg); -webkit-transform: rotate(85deg); transform: rotate(85deg); }
 
 .equalizer { font-size: 0; max-width: 500px; }
 .equalizer .col { position: relative; display: inline-block; vertical-align: bottom; margin-right: 7px; width: 29px; }
@@ -327,27 +338,27 @@ h1, h2, h3, h4, h5, h6, b, em, strong, i, th, td { font-weight: normal; font-sty
 .equalizer .col.col2 { height: 181px; }
 .equalizer .col.col2:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
 .equalizer .col.col3 { height: 159px; }
-.equalizer .col.col3:before { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+.equalizer .col.col3:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
 .equalizer .col.col4 { height: 262px; }
-.equalizer .col.col4:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
+.equalizer .col.col4:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
 .equalizer .col.col5 { height: 191px; }
-.equalizer .col.col5:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.equalizer .col.col5:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
 .equalizer .col.col6 { height: 157px; }
-.equalizer .col.col6:before { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+.equalizer .col.col6:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
 .equalizer .col.col7 { height: 240px; }
 .equalizer .col.col7:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
 .equalizer .col.col8 { height: 148px; }
-.equalizer .col.col8:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.equalizer .col.col8:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
 .equalizer .col.col9 { height: 200px; }
-.equalizer .col.col9:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
+.equalizer .col.col9:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
 .equalizer .col.col10 { height: 226px; }
-.equalizer .col.col10:before { -webkit-animation-delay: 0.6s; animation-delay: 0.6s; }
+.equalizer .col.col10:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
 .equalizer .col.col11 { height: 183px; }
 .equalizer .col.col11:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
 .equalizer .col.col12 { height: 140px; }
 .equalizer .col.col12:before { -webkit-animation-delay: 0.4s; animation-delay: 0.4s; }
 .equalizer .col.col13 { height: 193px; }
-.equalizer .col.col13:before { -webkit-animation-delay: 0.3s; animation-delay: 0.3s; }
+.equalizer .col.col13:before { -webkit-animation-delay: 0.2s; animation-delay: 0.2s; }
 
 .money-m { background: url("../img/magnit.png") no-repeat 0 0; width: 454px; height: 155px; position: relative; }
 .money-m__in { position: absolute; left: 185px; right: 102px; top: 0; bottom: 0; margin: auto; overflow: hidden; }
